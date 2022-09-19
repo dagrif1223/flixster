@@ -5,11 +5,12 @@ import org.json.JSONArray
 
 data class Movie(
     val movieId: Int,
-    val posterPath: String,
     val title: String,
     val overview: String,
+    val posterPath: String,
         ){
-    val posterImageUrl = "http://image.tmdb.org/t/p/w500/$posterPath"
+    val posterImageUrl = "http://image.tmdb.org/t/p/w300$posterPath"
+
     companion object{
         fun fromJsonArray(movieJsonArray: JSONArray): List<Movie> {
             val movies = mutableListOf<Movie>()
@@ -18,9 +19,9 @@ data class Movie(
                 movies.add(
                     Movie(
                         movieJson.getInt("id"),
-                        movieJson.getString("posterPath"),
                         movieJson.getString("title"),
-                        movieJson.getString("overview")
+                        movieJson.getString("overview"),
+                        movieJson.getString("poster_path")
 
                     )
                 )
