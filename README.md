@@ -11,8 +11,8 @@ Time spent: 5-10 hours spent in total
 The following **required** functionality is completed:
 
 - [x] **Make a request to [The Movie Database API's `now_playing`](https://developers.themoviedb.org/3/movies/get-now-playing) endpoint to get a list of current movies**
-- [ ] **Parse through JSON data and implement a RecyclerView to display all movies**
-- [ ] **Use Glide to load and display movie poster images**
+- [x] **Parse through JSON data and implement a RecyclerView to display all movies**
+- [x] **Use Glide to load and display movie poster images**
 
 The following **optional** features are implemented:
 
@@ -30,14 +30,13 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
+https://imgur.com/a/jtvGzk6
 
 GIF created with imgur
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Had issues loading the images with Glide.
 
 ## License
 
